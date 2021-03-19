@@ -9,36 +9,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <title>Landing Page</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
   </head>
+
   <body>
 
     <!-- Add in Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">? <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li> -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Max Temperature</a>
-                  <a class="dropdown-item" href="#">Humidity</a>
-                  <a class="dropdown-item" href="#">cloudiness</a>
-                  <a class="dropdown-item" href="#">Wind Speed</a>
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                 </div>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Comparisons</a>
+              <a class="nav-link" href="comparisons.html">Comparisons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="data.html">Data</a>
           </ul>
         </div>
       </nav>
@@ -47,20 +52,37 @@
     <h1>Summary: Latitude vs. X </h1>    
             
     <hr>
-    <img src="Resources/assets/images/Fig1.png" width = "300" ALIGN= "left"> 
+    <img src="Resources/assets/images/Fig1.png" width = "500" ALIGN= "left"> 
     <p> The purposes of this project was to analyze the impact of latitiude on weather such as temperature, wind speed, cloudiness, and humidity.
-    Dat was pulled from the Open Weather API to populate weather information for over 500 cities. 
+    Data was pulled from the Open Weather API to populate weather information for over 500 cities. 
     </p>
     <br>
     <p> After populating and cleaning the data, we used linear regression models to determine impact of latitude and weather. 
-    What was discovered was  Reviewing the weather data, I see the closer you get to the equator, the higher the temperate. 
+    What was discovered was in reviewing the weather data, I see the closer you get to the equator, the higher the temperate. 
     The intersting thing is the difference in corrletion between northern and southern hemisphere. 
-    There is a stronger correlation in the northern as the northern is cool. 
-    The southern hemisphere shows a looser correlation with some latitues still quite hot </p>
+    There is a stronger correlation in the northern hemisphere as the northern hemisphere is cooler the further from the equator. 
+    The southern hemisphere shows a looser correlation with some latitues still quite hot. </p>
     <br clear = "left"/>
     <h2>Visualizations </h2>
     <hr>
-    <a href = "#"> img src="Resources/assets/images/Fig2.png"</a>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="300"  alt="temperature"></a> 
+                </div>
+                <div class="col-md-6">
+                    <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="300" alt="humidity"></a>
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="300"  alt="cloudiness"></a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="300"  alt="wind speed"></a>
+                </div>
+            </div>    
+        </div>        
 
     <!-- Optional JavaScript; choose one of the two! -->
 
